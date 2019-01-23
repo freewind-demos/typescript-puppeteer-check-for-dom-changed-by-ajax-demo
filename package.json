@@ -1,13 +1,18 @@
 {
   "scripts": {
+    "server": "http-server . -p 8989 -c-1 -o",
     "demo": "npm link puppeteer && ts-node hello.ts"
   },
   "devDependencies": {
     "@types/puppeteer": "1.11.1",
+    "http-server": "0.11.1",
     "ts-node": "7.0.0",
     "typescript": "3.0.1"
   },
   "peerDependencies": {
     "puppeteer": "*"
+  },
+  "dependencies": {
+    "jquery": "3.3.1"
   }
 }
